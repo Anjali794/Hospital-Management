@@ -3,7 +3,7 @@ from typing import Annotated, Literal, Optional
 
 class Patient(BaseModel):
     model_config = {"populate_by_name": True}
-    id: Annotated[str, Field(..., description='ID of the patient', examples=['P001'])]
+    id: Annotated[str, Field(..., description='ID of the patient', examples=['P-001'])]
     email: EmailStr = Field(..., description='Email of the patient (must match signed up user)')
     name: Annotated[str, Field(..., description='Name of the patient')]
     city: Annotated[str, Field(..., description='City where the patient is living')]
