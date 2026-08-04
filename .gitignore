@@ -1,2 +1,13 @@
-.vscode
-_pycache_
+.env
+*.env
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+
+.github/
+
+.vscode/
